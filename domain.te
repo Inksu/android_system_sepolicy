@@ -568,7 +568,7 @@ neverallow * ~servicemanager:service_manager list;
 neverallow * ~service_manager_type:service_manager { add find };
 
 # Prevent assigning non property types to properties
-neverallow * ~property_type:property_service set;
+#neverallow * ~property_type:property_service set;
 
 # Domain types should never be assigned to any files other
 # than the /proc/pid files associated with a process. The
